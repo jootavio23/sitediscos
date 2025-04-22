@@ -31,6 +31,7 @@
                 <a href="#menu">Discos</a>
                 <a href="#review">Avaliações</a>
                 <a href="#address">Endereço</a>
+                <a href="#faleconosco" class="btn">Fale Conosco</a>
             </nav>
 
             <div class="icons">
@@ -70,7 +71,7 @@
     <section class="menu" id="menu">
         <h2 class="title">Discos <span>à Venda</span></h2>
         <div class="box-container">
-          <!-- Cada .box representa um item do cardápio -->
+       
           <div class="box">
             <img src="img/images.jpg" alt="" />
             <h3>Lavô tá Novo - Raimundos</h3>
@@ -116,13 +117,13 @@
       <section class="review" id="review">
         <h2 class="title">Avaliação <span>dos Clientes</span></h2>
         <div class="box-container">
-          <!-- Avaliação individual -->
+       
           <div class="box">
             <img src="img/quote-img.png" alt="" />
             <p>Loja muito boa! Vou usar esses discos nos meus próximos shows.</p>
             <img src="img/Captura de tela 2025-04-22 092415.png" alt="foto-cliente" class="user" />
             <h3>Fernando Negrão</h3>
-            <!-- Estrelas de avaliação -->
+           
             <div class="stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -131,7 +132,7 @@
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
           </div>
-          <!-- Outras avaliações -->
+          
           <div class="box">
             <img src="img/quote-img.png" alt="" />
             <p>Amei a loja! Meu disco favorito é o do Ney Matogrosso.</p>
@@ -160,13 +161,13 @@
         </div>
       </section>
   
-      <!-- Seção com o endereço e mapa do local -->
+      
       <section class="address" id="address">
         <h2 class="title">Nosso <span>Endereço</span></h2>
         <p>
           Estamos localizados na cidade de Brotas, ao lado da casa da Dona Edninha.
         </p>
-        <!-- Mapa incorporado do Google Maps -->
+        
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d351.16277432505035!2d-48.12432655655897!3d-22.287429306697184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c779b6eab3bb45%3A0xf2c6199a34d171e9!2sR.%20Quintino%20Bocai%C3%BAva%2C%20Brotas%20-%20SP%2C%2017380-000!5e1!3m2!1spt-BR!2sbr!4v1745325313361!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           width="600"
           height="450"
@@ -175,6 +176,80 @@
           loading="lazy"
         </iframe>
       </section>
+
+    
+        <section class="faleconosco" id="faleconosco">
+            <h2 class="title">Fale Conosco</h2>
+            <p>Se você deseja entrar em contato conosco, preencha o formulário abaixo:</p>
+            
+            
+            <form onsubmit="processarFormulario(event)">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label>Nome:</label>
+                <input type="text" placeholder="Insira seu nome." required><br><br>
+                
+                <label>Endereço:</label>
+                <input type="text" placeholder="Insira seu endereço." required><br><br>
+                
+                <label>Cidade:</label>
+                <input type="text" placeholder="Insira sua cidade." required><br><br>
+                
+                <label>Estado:</label>
+                <select required>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="BA">Bahia</option>
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="SE">Sergipe</option>
+                <option value="AL">Alagoas</option>
+                <option value="CE">Ceará</option>
+                <option value="MA">Maranhão</option>
+                <option value="PB">Paraíba</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="TO">Tocantins</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="GO">Goiás</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="AC">Acre</option>
+                <option value="AP">Amapá</option>
+                <option value="PA">Pará</option>
+                <option value="AM">Amazonas</option>
+
+
+
+
+
+
+                </select>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Gênero</legend>
+                <input type="radio" value="Masculino" required>
+                <label>Masculino</label>
+                <input type="radio" value="Feminino" required>
+                <label>Feminino</label>
+            </fieldset>
+            <legend>Avaliação</legend>
+                <label>Adicionar Avaliação:</label>
+                <textarea rows="5" cols="50" placeholder="Escreva aqui..." required></textarea>
+            </fieldset>
+            <br><br>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+    
+        
+    
+            </form>
   
       <footer class="footer">
         <div class="footer-container">
@@ -195,7 +270,9 @@
             <a href="#menu">Discos</a>
             <a href="#review">Avaliações</a>
             <a href="#address">Endereço</a>
+            <a href="#faleconosco" class="btn">Fale Conosco</a>
           </nav>
+          
   
           <p class="footer-copy">
             © 2025 Tavão Discos. Todos os direitos reservados.
